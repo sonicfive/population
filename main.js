@@ -1,4 +1,5 @@
 
+
 $(document).ready(function(){
   load();
 });
@@ -7,7 +8,7 @@ function load(){
 var options = {
   country: "Mexico",
   year: 1950
-}
+};
 
 renderGraph();
 
@@ -49,7 +50,7 @@ function InitChart( data ) {
   var barData = [];
   $.each(data, function(i, val){
     //console.log(val);
-    if(i%2 == 0){
+    if(i%2 === 0){
         barData.push( {'age':val.age,'total':val.total});
     }
 
