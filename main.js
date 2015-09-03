@@ -9,6 +9,8 @@ var options = {
   year: 1950
 }
 
+renderGraph();
+
 
 $("#year").change( function(){
   selected = $(this).find('option:selected').val();
@@ -23,6 +25,8 @@ $("#country").change( function(){
   renderGraph();
 
 });
+
+
 
 
 function renderGraph(){
