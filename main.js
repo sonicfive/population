@@ -1,3 +1,9 @@
+
+$(document).ready(function(){
+  load();
+});
+
+function load(){
 var options = {
   country: "Mexico",
   year: 1950
@@ -110,4 +116,5 @@ function InitChart( data ) {
 function clearGraph(){
   var svg = d3.select("svg");
   svg.selectAll("*").remove();
+}
 }
