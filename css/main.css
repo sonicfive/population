@@ -1,0 +1,192 @@
+/* -------------------------------------
+        MAIN
+---------------------------------------*/
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+/* -------------------------------------
+        GRAPH
+---------------------------------------*/
+
+.axis path, .axis line
+      {
+          fill: none;
+          stroke: #777;
+          shape-rendering: crispEdges;
+      }
+
+      .axis text
+      {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 13px;
+      }
+      .tick
+      {
+          stroke-dasharray: 1, 2;
+      }
+      .bar
+      {
+          fill: FireBrick;
+      }
+
+      .container{
+        min-height:100px;
+        margin:0px auto;
+        width:1200px;
+        background-color:#ffffff;
+
+      }
+      .left-pane, .right-pane{
+        float:left;
+      }
+      .left-pane{
+        width: 70%;
+      }
+      .right-pane{
+        width: 30%;
+        background-color: #eeeeee;
+        height: 200px;
+      }
+      .right-pane p{
+        color: #333333!important;
+      }
+      .heading{
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        background-color: #038B4F;
+
+
+
+      }
+      .heading.alt{
+        background-color:#333333;
+      }
+      .heading h1{
+        color:#ffffff;
+        text-transform: uppercase;
+      }
+       .heading h2{
+        color:#ffffff;
+        text-transform: uppercase;
+      }
+      .explanation{
+        background-color: #f4f4f4;
+        height: 200px;
+      }
+      .explanation p{
+        padding:20px;
+        color: #333333;
+      }
+      .form-elements{
+
+
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+
+
+
+      /* -------------------------------------
+              FORM
+      ---------------------------------------*/
+      .form{
+          background-color: #038B4F;
+      }
+      label{
+        padding-right:5px;
+        padding-left:30px;
+        color:#ffffff;
+      }
+
+      #country {
+        width:200px;
+
+      }
+
+      .custom-dropdown--large {
+    font-size: 1.5em;
+      }
+
+      .custom-dropdown--small {
+        font-size: .7em;
+      }
+
+      .custom-dropdown__select{
+        font-size: inherit; /* inherit size from .custom-dropdown */
+        padding: .5em; /* add some space*/
+        margin: 0; /* remove default margins */
+      }
+
+      .custom-dropdown__select--white {
+        background-color: #fff;
+        color: #444;
+      }
+
+      @supports (pointer-events: none) and
+          ((-webkit-appearance: none) or
+          (-moz-appearance: none) or
+          (appearance: none)) {
+
+        .custom-dropdown {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .custom-dropdown__select {
+            padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+            border: 0;
+            border-radius: 3px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .custom-dropdown::before,
+        .custom-dropdown::after {
+            content: "";
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .custom-dropdown::after { /*  Custom dropdown arrow */
+            content: "\25BC";
+            height: 1em;
+            font-size: .625em;
+            line-height: 1;
+            right: 1.2em;
+            top: 50%; margin-top: -.5em;
+        }
+
+        .custom-dropdown::before { /*  Custom dropdown arrow cover */
+            width: 2em;
+            right: 0; top: 0; bottom: 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .custom-dropdown__select[disabled] {
+            color: rgba(0,0,0,.3);
+        }
+
+        .custom-dropdown.custom-dropdown--disabled::after {
+            color: rgba(0,0,0,.1);
+        }
+
+        /* White dropdown style */
+        .custom-dropdown--white::before {
+            background-color: #fff;
+            border-left: 1px solid rgba(0,0,0,.1);
+        }
+
+        .custom-dropdown--white::after {
+            color: rgba(0,0,0,.9);
+        }
+
+        /* FF only temp fix */
+        @-moz-document url-prefix() {
+            .custom-dropdown__select             { padding-right: .9em }
+            .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+            .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+        }
+      }
